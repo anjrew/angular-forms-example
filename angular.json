@@ -8,7 +8,7 @@
       "schematics": {},
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "forms-example-app"
+    }
+  },
+  "defaultProject": "forms-example-app",
+  "cli": {
+    "analytics": "af6fe641-e3a6-4bfe-8a39-dc50d10c46f9"
+  }
 }

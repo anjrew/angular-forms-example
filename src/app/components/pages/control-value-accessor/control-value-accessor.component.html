@@ -1,0 +1,13 @@
+<p>Tests the control-value-accessor</p>
+
+<h1>Value: {{ formGroup.get('pickedValue').value}}</h1>
+<h1>Touched: {{ formGroup.get('pickedValue').touched}}</h1>
+<h1>Dirty: {{ formGroup.get('pickedValue').dirty}}</h1>
+<h1>Has error: {{ formGroup.get('pickedValue').hasError('required')}}</h1>
+
+<button type="button" style="padding: 20px; margin:20px" (click)="toggleDisableControl()">Disable the control</button>
+<button type="button" style="padding: 20px; margin:20px" (click)="setToSaab()">Set to 'Saab'</button>
+
+<form [formGroup]="formGroup">
+  <standard-picker formControlName="pickedValue"></standard-picker>
+</form>
